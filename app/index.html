@@ -1,0 +1,860 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bootstrap Example</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href=" css/styles.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://bootstraptema.ru/plugins/2015/bootstrap3/bootstrap.min.css" />
+    <link type="text/css" rel="StyleSheet" href="https://bootstraptema.ru/plugins/2016/shieldui/style.css" />
+    <script src="https://bootstraptema.ru/plugins/jquery/jquery-3.6.0.min.js"></script>
+    <script src="https://bootstraptema.ru/plugins/2016/shieldui/script.js"></script>
+</head>
+
+
+   
+<body style="background-color: rgba(201, 201, 201, 0.815);">
+
+    <header id="header" class="fixed-top" >
+        <nav class="navbar navbar-expand-lg navbar-dark" >
+            <div class="container" >
+                <a href="" class="navbar-brand "> WEb</a>
+                
+                <div class="collapse navbar-collapse" id="navContent">
+                    <ul class="navbar-nav mr-auto mb-3 mb-lg-0">
+                        <li >
+                            <li style="margin-left: 30px;">
+                                <div class="col-xl-2  col-md-4 col-6 row mt-2 ">
+                                    <div class="icon-box ">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+                                            <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </li>
+                            <li style="margin-left: 7px;">
+                                <div class="col-xl-2 col-md-4 col-6 row mt-2">
+                                    <div class="icon-box">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-right-text" viewBox="0 0 16 16">
+                                            <path d="M2 1a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h9.586a2 2 0 0 1 1.414.586l2 2V2a1 1 0 0 0-1-1H2zm12-1a2 2 0 0 1 2 2v12.793a.5.5 0 0 1-.854.353l-2.853-2.853a1 1 0 0 0-.707-.293H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12z"/>
+                                            <path d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6zm0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </li>
+                            <li style="margin-left: 7px;">
+                                <div class="col-xl-2 col-md-4 col-6 row mt-2">
+                                    <div class="icon-box">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-blockquote-left" viewBox="0 0 16 16">
+                                            <path d="M2.5 3a.5.5 0 0 0 0 1h11a.5.5 0 0 0 0-1h-11zm5 3a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1h-6zm0 3a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1h-6zm-5 3a.5.5 0 0 0 0 1h11a.5.5 0 0 0 0-1h-11zm.79-5.373c.112-.078.26-.17.444-.275L3.524 6c-.122.074-.272.17-.452.287-.18.117-.35.26-.51.428a2.425 2.425 0 0 0-.398.562c-.11.207-.164.438-.164.692 0 .36.072.65.217.873.144.219.385.328.72.328.215 0 .383-.07.504-.211a.697.697 0 0 0 .188-.463c0-.23-.07-.404-.211-.521-.137-.121-.326-.182-.568-.182h-.282c.024-.203.065-.37.123-.498a1.38 1.38 0 0 1 .252-.37 1.94 1.94 0 0 1 .346-.298zm2.167 0c.113-.078.262-.17.445-.275L5.692 6c-.122.074-.272.17-.452.287-.18.117-.35.26-.51.428a2.425 2.425 0 0 0-.398.562c-.11.207-.164.438-.164.692 0 .36.072.65.217.873.144.219.385.328.72.328.215 0 .383-.07.504-.211a.697.697 0 0 0 .188-.463c0-.23-.07-.404-.211-.521-.137-.121-.326-.182-.568-.182h-.282a1.75 1.75 0 0 1 .118-.492c.058-.13.144-.254.257-.375a1.94 1.94 0 0 1 .346-.3z"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </li>
+                            <li style="margin-left: 577px;">
+                                <li class="nav-item dropdown ">
+                                    <input type="search" placeholder="Search" class="form-control mr-2">
+                                   
+                                </li>
+                            </li>
+                            
+                        </li>
+                       
+                        
+                    </ul>
+                    <li action="#" class="d-flex">
+                        <button id="btn_name" type="button" class="btn btn-link" data-toggle="dropdown" >
+                            Vlad
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="btn_name" style="margin-left: 1200px;">
+                            <a class="dropdown-item" href="#">Dropdown link</a>
+                            <a class="dropdown-item" href="#">Dropdown link</a>
+                        </div>
+                    </li>
+                    
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="nav-side-menu">
+       
+        <div class="brand">Brand Logo</div>
+        <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-content"></i>
+      
+            <div class="menu-list">
+      
+                <ul id="menu-content" class="menu-content collapse out">
+                    <li>
+                      <a href="#">
+                      <i class="fa fa-dashboard fa-lg"></i> Dashboard
+                      </a>
+                    </li>
+    
+                    <li  data-toggle="collapse" data-target="#Dashboard" class="collapsed active">
+                      <a href="#"><i class="fa fa-gift fa-lg"></i> Dashboard <span class="arrow"></span></a>
+                    </li>
+                    <ul class="sub-menu collapse" id="Dashboard">
+                        <li class="active"><a href="#">CSS3 Animation</a></li>
+                        <li><a href="#">Dashboard1</a></li>
+                        <li><a href="#">Dashboard2</a></li>
+                        <li><a href="#">Dashboard3</a></li>
+                    </ul>
+                    <li  data-toggle="collapse" data-target="#Layouts" class="collapsed active">
+                        <a href="#"><i class="fa fa-gift fa-lg"></i> Layouts <span class="arrow"></span></a>
+                      </li>
+                    <ul class="sub-menu collapse" id="Layouts">
+                          <li class="active"><a href="#">CSS3 Animation</a></li>
+                          <li><a href="#">Layouts1</a></li>
+                          <li><a href="#">Layouts2</a></li>
+                          <li><a href="#">Layouts3</a></li>
+                    </ul>
+                    <li  data-toggle="collapse" data-target="#Pages" class="collapsed active">
+                        <a href="#"><i class="fa fa-gift fa-lg"></i> Pages <span class="arrow"></span></a>
+                    </li>
+                    <ul class="sub-menu collapse" id="Pages">
+                          <li class="active"><a href="#">CSS3 Animation</a></li>
+                          <li><a href="#">Pages1</a></li>
+                          <li><a href="#">Pages2</a></li>
+                          <li><a href="#">Pages3</a></li>
+                    </ul>
+                   
+                    <li>
+                      <a href="#">
+                      <i class="fa fa-users fa-lg"></i> Elements
+                      </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                        <i class="fa fa-users fa-lg"></i> Invoice
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                        <i class="fa fa-users fa-lg"></i> Charts
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                        <i class="fa fa-users fa-lg"></i> Snippets
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                        <i class="fa fa-users fa-lg"></i> Ui Widgets
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                        <i class="fa fa-users fa-lg"></i> Forms
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                        <i class="fa fa-users fa-lg"></i> Componnets
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                        <i class="fa fa-users fa-lg"></i> Plugin
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                        <i class="fa fa-users fa-lg"></i> Email
+                        </a>
+                    </li>
+                </ul>
+         </div>
+    </div>
+    <script>
+        function toggleSidebar(ref){
+            document.getElementById("sidebar").classList.toggle('active');
+        }           
+    </script> 
+    <section class="start">
+        <div class="container">
+            <div class=" d-flex bd-highlight">
+                <div class=" p-2 flex-grow-1 bd-highlight qqqqqqqqq">
+                    <div >
+                        <h6 id="dash">Dashboard/ Home/ All Site View</h6>
+                    </div>
+                </div>
+                <div class=" p-2 bd-highlight"  >
+                    <div>
+                        <h6>Reporting Period</h6>
+                    </div>
+                </div>
+                <div class=" p-2 bd-highlight"  >
+                    <div class="btn-group" role="group" style=" height: 35px;">
+                        <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Dropdown
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                          <a class="dropdown-item" href="#">Dropdown link</a>
+                          <a class="dropdown-item" href="#">Dropdown link</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+       
+    </section>
+
+     
+    <section class="services">
+        <div class="container ">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="icon-box ">
+                        <div class="icon ">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="3em" height="16" fill="currentColor" class="bi bi-people" viewBox="0 0 16 16">
+                                <path d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816zM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275zM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z"/>
+                            </svg>
+                        </div>
+                        <button type="button" class="btn btn-light" id="services_btn">Visitors</button>
+                        <h6 class="text-center">125K (+0.50%)</h6>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="icon-box " >
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-music-note-beamed" viewBox="0 0 16 16">
+                                <path d="M6 13c0 1.105-1.12 2-2.5 2S1 14.105 1 13c0-1.104 1.12-2 2.5-2s2.5.896 2.5 2zm9-2c0 1.105-1.12 2-2.5 2s-2.5-.895-2.5-2 1.12-2 2.5-2 2.5.895 2.5 2z"/>
+                                <path fill-rule="evenodd" d="M14 11V2h1v9h-1zM6 3v10H5V3h1z"/>
+                                <path d="M5 2.905a1 1 0 0 1 .9-.995l8-.8a1 1 0 0 1 1.1.995V3L5 4V2.905z"/>
+                              </svg>
+                        </div>
+                        
+                        <button type="button" class="btn btn-light" id="services_btn">New Order</button>
+                        <h6 class="text-center">125K (+0.50%)</h6>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="icon-box ">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-music-note-beamed" viewBox="0 0 16 16">
+                                <path d="M6 13c0 1.105-1.12 2-2.5 2S1 14.105 1 13c0-1.104 1.12-2 2.5-2s2.5.896 2.5 2zm9-2c0 1.105-1.12 2-2.5 2s-2.5-.895-2.5-2 1.12-2 2.5-2 2.5.895 2.5 2z"/>
+                                <path fill-rule="evenodd" d="M14 11V2h1v9h-1zM6 3v10H5V3h1z"/>
+                                <path d="M5 2.905a1 1 0 0 1 .9-.995l8-.8a1 1 0 0 1 1.1.995V3L5 4V2.905z"/>
+                            </svg>
+                        </div>
+                        <button type="button" class="btn btn-light" id="services_btn">Sales</button>
+                        <h6 class="text-center">125K (+0.50%)</h6>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="icon-box ">
+                        <div class="icon ">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-music-note-beamed" viewBox="0 0 16 16">
+                                <path d="M6 13c0 1.105-1.12 2-2.5 2S1 14.105 1 13c0-1.104 1.12-2 2.5-2s2.5.896 2.5 2zm9-2c0 1.105-1.12 2-2.5 2s-2.5-.895-2.5-2 1.12-2 2.5-2 2.5.895 2.5 2z"/>
+                                <path fill-rule="evenodd" d="M14 11V2h1v9h-1zM6 3v10H5V3h1z"/>
+                                <path d="M5 2.905a1 1 0 0 1 .9-.995l8-.8a1 1 0 0 1 1.1.995V3L5 4V2.905z"/>
+                              </svg>
+                        </div>
+                        <button type="button" class="btn btn-light" id="services_btn">Shipping</button>
+                        <h6 class="text-center">125K (+0.50%)</h6>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="bi" >
+        <div class="container" >
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="icon-box" style="background-color: #fff;">
+                        <div>
+                
+                            <!-- График --><div id="chart">
+                            
+                                <script>
+                                    $(document).ready(function() {
+                                $("#chart").shieldChart({
+                                    theme: "bootstrap",
+                                    primaryHeader: {
+                                        text: "Earning graph overview"
+                                    },
+                                    exportOptions: {
+                                        image: false,
+                                        print: false
+                                    },
+                                    axisY: [{
+                                        title: {
+                                            
+                                            style: {
+                                                color: "#52B0F0"
+                                            }
+                                        },
+                                        swapLocation: false,
+                                        axisTickText: {
+                                            style: {
+                                                color: "#52B0F0"
+                                            }
+                                        }
+                                    }, {
+                                        title: {
+                                            
+                                            style: {
+                                                color: "#FF0000"
+                                            }
+                                        },
+                                        swapLocation: true,
+                                        axisTickText: {
+                                            style: {
+                                                color: "#FF0000"
+                                            }
+                                        }
+                                    }],
+                                    dataSeries: [{
+                                        color: "#006400",
+                                        axisY: 0,
+                                        seriesType: "area",
+                                        collectionAlias: "rrrrrrrrrrrrrrrr",
+                                        data: [2000,11000,3000,10000,2000]
+                                    },{
+                                        axisY: 0,
+                                        color: "#FF8C00",
+                                        seriesType: "area",
+                                        collectionAlias: "gfg",
+                                        data: [2000,16000,4000,10000,2000]
+                                    },{
+                                        color: "#0000CD",
+                                        axisY: 0,
+                                        seriesType: "area",
+                                        collectionAlias: "rrrrrrrrrrrrrrrr",
+                                        data: [2500,11000,3000,12500,2000]
+                                    },{
+                                        color: "#1E90FF",
+                                        axisY: 0,
+                                        seriesType: "area",
+                                        collectionAlias: "rrrrrrrrrrrrrrrr",
+                                        data: [2000,16000,4500,12500,2000]
+                                    }]
+                                });
+                            });
+                                   </script><!-- /.График -->
+                            
+                            </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+          
+      
+      
+        
+    </section>
+
+    <section class="project" >
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9">
+                    <div class="icon-box1">
+                        <div class="row">
+                            <div class="col-lg-7">
+                                <h5>Top Search</h5>
+                            </div>
+                            <div class="col-lg-2">
+                                <div class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-music-note-beamed" viewBox="0 0 16 16">
+                                        <path d="M6 13c0 1.105-1.12 2-2.5 2S1 14.105 1 13c0-1.104 1.12-2 2.5-2s2.5.896 2.5 2zm9-2c0 1.105-1.12 2-2.5 2s-2.5-.895-2.5-2 1.12-2 2.5-2 2.5.895 2.5 2z"/>
+                                        <path fill-rule="evenodd" d="M14 11V2h1v9h-1zM6 3v10H5V3h1z"/>
+                                        <path d="M5 2.905a1 1 0 0 1 .9-.995l8-.8a1 1 0 0 1 1.1.995V3L5 4V2.905z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-music-note-beamed" viewBox="0 0 16 16">
+                                        <path d="M6 13c0 1.105-1.12 2-2.5 2S1 14.105 1 13c0-1.104 1.12-2 2.5-2s2.5.896 2.5 2zm9-2c0 1.105-1.12 2-2.5 2s-2.5-.895-2.5-2 1.12-2 2.5-2 2.5.895 2.5 2z"/>
+                                        <path fill-rule="evenodd" d="M14 11V2h1v9h-1zM6 3v10H5V3h1z"/>
+                                        <path d="M5 2.905a1 1 0 0 1 .9-.995l8-.8a1 1 0 0 1 1.1.995V3L5 4V2.905z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-music-note-beamed" viewBox="0 0 16 16">
+                                        <path d="M6 13c0 1.105-1.12 2-2.5 2S1 14.105 1 13c0-1.104 1.12-2 2.5-2s2.5.896 2.5 2zm9-2c0 1.105-1.12 2-2.5 2s-2.5-.895-2.5-2 1.12-2 2.5-2 2.5.895 2.5 2z"/>
+                                        <path fill-rule="evenodd" d="M14 11V2h1v9h-1zM6 3v10H5V3h1z"/>
+                                        <path d="M5 2.905a1 1 0 0 1 .9-.995l8-.8a1 1 0 0 1 1.1.995V3L5 4V2.905z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-9">
+                                <div class="icon-box3">
+                                    <div style="width: 100%"><iframe width="621px" height="260" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=500&amp;hl=en&amp;q=%D1%83%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%B0+(My%20Business%20Name)&amp;t=&amp;z=2&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe></div>
+                                </div>
+                                
+                            </div>
+                            <div class="col">
+                                <div class="icon-box4">
+                                    <div class="row">
+                                        <div class="col">
+                                            <img src="images/america.jpg" >
+                                        </div>
+                                        <div class="col">
+                                            <h6>America</h6>
+                                            <h6>46%</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="icon-box4">
+                                    <div class="row">
+                                        <div class="col">
+                                            <img src="images/UK.png" >
+                                        </div>
+                                        <div class="col">
+                                            <h6>UK</h6>
+                                            <h6>24%</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="icon-box4">
+                                    <div class="row">
+                                        <div class="col">
+                                            <img src="images/Bangladesh.jpg" >
+                                        </div>
+                                        <div class="col">
+                                            <h6>Bangladesh</h6>
+                                            <h6>18%</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="icon-box4">
+                                    <div class="row">
+                                        <div class="col">
+                                            <img src="images/Canada.jpg" >
+                                        </div>
+                                        <div class="col">
+                                            <h6>Canada</h6>
+                                            <h6>12%</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="icon-box4">
+                                    <div class="row">
+                                        <div class="col">
+                                            <img src="images/russia.jpg" >
+                                        </div>
+                                        <div class="col">
+                                            <h6>Rusia</h6>
+                                            <h6>10%</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="icon-box2">
+                        <div class="row main2">
+                            <div class="col-lg-8">
+                                <h6>Traffic Sources</h6>
+                            </div>
+                            <div class="col-lg-2">
+                                <div class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-music-note-beamed" viewBox="0 0 16 16">
+                                        <path d="M6 13c0 1.105-1.12 2-2.5 2S1 14.105 1 13c0-1.104 1.12-2 2.5-2s2.5.896 2.5 2zm9-2c0 1.105-1.12 2-2.5 2s-2.5-.895-2.5-2 1.12-2 2.5-2 2.5.895 2.5 2z"/>
+                                        <path fill-rule="evenodd" d="M14 11V2h1v9h-1zM6 3v10H5V3h1z"/>
+                                        <path d="M5 2.905a1 1 0 0 1 .9-.995l8-.8a1 1 0 0 1 1.1.995V3L5 4V2.905z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="col-lg-2">
+                                <div class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-music-note-beamed" viewBox="0 0 16 16">
+                                        <path d="M6 13c0 1.105-1.12 2-2.5 2S1 14.105 1 13c0-1.104 1.12-2 2.5-2s2.5.896 2.5 2zm9-2c0 1.105-1.12 2-2.5 2s-2.5-.895-2.5-2 1.12-2 2.5-2 2.5.895 2.5 2z"/>
+                                        <path fill-rule="evenodd" d="M14 11V2h1v9h-1zM6 3v10H5V3h1z"/>
+                                        <path d="M5 2.905a1 1 0 0 1 .9-.995l8-.8a1 1 0 0 1 1.1.995V3L5 4V2.905z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row main2">
+                            <div class="col">
+                                <button type="button" class="btn btn-secondary" id="icon-box-btn">
+                                    Diract
+                                </button>
+                            </div>
+                            <div class="col">
+                                <h6>
+                                    1150
+                                </h6>
+                            </div>
+                            <div class="col">
+                                <img src="images/graph3.jpg" class="image2">
+                            </div>
+                        </div>
+                        <div class="row main2">
+                            <div class="col">
+                                <button type="button" class="btn btn-secondary" id="icon-box-btn">
+                                    Refer
+                                </button>
+                            </div>
+                            <div class="col">
+                                <h6>
+                                    980
+                                </h6>
+                            </div>
+                            <div class="col">
+                                <img src="images/graph4.jpg" class="image2">
+                            </div>
+                        </div>
+                        <div class="row main2">
+                            <div class="col">
+                                <button type="button" class="btn btn-secondary" id="icon-box-btn">
+                                    Social
+                                </button>
+                            </div>
+                            <div class="col">
+                                <h6>
+                                    720
+                                </h6>
+                            </div>
+                            <div class="col">
+                                <img src="images/graph5.jpg" class="image2">
+                            </div>
+                        </div>
+                        <div class="row main2">
+                            <div class="col">
+                                <button type="button" class="btn btn-secondary" id="icon-box-btn">
+                                    Search
+                                </button>
+                            </div>
+                            <div class="col">
+                                <h6>
+                                    600
+                                </h6>
+                            </div>
+                            <div class="col">
+                                <img src="images/graph6.jpg" class="image2">
+                            </div>
+                        </div>
+                        <div class="row main2">
+                            <div class="col">
+                                <button type="button" class="btn btn-secondary" id="icon-box-btn">
+                                    Internal 
+                                </button>
+                            </div>
+                            <div class="col">
+                                <h6>
+                                    1200
+                                </h6>
+                            </div>
+                            <div class="col">
+                                <img src="images/graph7.jpg" class="image2">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+            
+        </div>
+    </section>
+   
+    <section class="dress_and_other">
+        <div class="container">
+            <div class="icon-box">
+                <div class="row">
+                    <div class="col-lg-9">
+                        
+                        <h3>Recent order</h3>
+                    </div>
+                    <div class="col-lg-2">
+                        <div class="icon">
+                            <div class="icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2" viewBox="0 0 16 16">
+                                    <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                                <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <h4>Image</h4>
+                    </div>
+                    <div class="col">
+                        <h4>Product name</h4>
+                    </div>
+                    <div class="col">
+                        <h4>Product code</h4>
+                    </div>
+                    <div class="col">
+                        <h4>Status</h4>
+                    </div>
+                    <div class="col">
+                        <h4>Purchased on</h4>
+                    </div>
+                    <div class="col">
+                        <h4>Price</h4>
+                    </div>
+                    <div class="col">
+                        <h4>quntity</h4>
+                    </div>
+                    <div class="col">
+                        <h4>Traking NO</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <img src="images/dress_1.jpg">
+                    </div>
+                    <div class="col">
+                        <h6>Leisure Suit Casual</h6>
+                    </div>
+                    <div class="col">
+                        <h6>3BSD59</h6>
+                    </div>
+                    <div class="col">
+                        <button type="button" class="btn btn-primary" id="dres-btn">Paid</button>
+                    </div>
+                    <div class="col">
+                        <h6>27 Sep 2015</h6>
+                    </div>
+                    <div class="col">
+                        <h6>$99.00</h6>
+                    </div>
+                    <div class="col">
+                        <h6>2</h6>
+                    </div>
+                    <div class="col">
+                        <h6>#BG6R9853LP</h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <img src="images/dress_2.jpg">
+                    </div>
+                    <div class="col">
+                        <h6>Cotton Fleece Casual</h6>
+                    </div>
+                    <div class="col">
+                        <h6>3BH87G</h6>
+                    </div>
+                    <div class="col">
+                        <button type="button" class="btn btn-warning" id="dres-btn">Warning</button>
+                    </div>
+                    <div class="col">
+                        <h6>08 Sep 2015</h6>
+                    </div>
+                    <div class="col">
+                        <h6>$99.00</h6>
+                    </div>
+                    <div class="col">
+                        <h6>2</h6>
+                    </div>
+                    <div class="col">
+                        <h6>#368QRM83B</h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <img src="images/dress_3.jpg">
+                    </div>
+                    <div class="col">
+                        <h6>Formal Slim Fit Calual</h6>
+                    </div>
+                    <div class="col">
+                        <h6>4D3GHT</h6>
+                    </div>
+                    <div class="col">
+                        <button type="button" class="btn btn-primary" id="dres-btn">Paid</button>
+                    </div>
+                    <div class="col">
+                        <h6>25 Aug 2015</h6>
+                    </div>
+                    <div class="col">
+                        <h6>$99.00</h6>
+                    </div>
+                    <div class="col">
+                        <h6>2</h6>
+                    </div>
+                    <div class="col">
+                        <h6>#AXZ6F58T3V</h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <img src="images/dress_4.jpg" alt="">
+                    </div>
+                    <div class="col">
+                        <h6>Velvet Patckwork Calual</h6>
+                    </div>
+                    <div class="col">
+                        <h6>5D4H3G</h6>
+                    </div>
+                    <div class="col">
+                        <button type="button" class="btn btn-danger" id="dres-btn">Failed</button>
+                    </div>
+                    <div class="col">
+                        <h6>27 Sep 2015</h6>
+                    </div>
+                    <div class="col">
+                        <h6>$99.00</h6>
+                    </div>
+                    <div class="col">
+                        <h6>2</h6>
+                    </div>
+                    <div class="col">
+                        <h6>#SD89HK561</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cc">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="icon-box">
+                        <div id="chart2" >
+        
+                            <script>
+                             $(function () {
+                             var householdPrices = [ 
+                             {x:'1',y:0.07},
+                             {x:'2',y:0.150},
+                             {x:'3.3',y:0.172},
+                             {x:'4.5',y:0.189},
+                             {x:'6',y:0.180}
+                    
+                             ];
+                             var industryPrices = [ 
+                             {x:'1',y:0.08},
+                             {x:'1.5',y:0.130},
+                             {x:'2.5',y:0.09},
+                             {x:'3.5',y:0.181},
+                             {x:'4.6',y:0.172},
+                             {x:'6',y:0.177}
+                             
+                             
+                             ]; 
+                             $("#chart2").shieldChart({
+                             theme: "light",
+                             exportOptions: {
+                             image: false,
+                             print: false
+                             },
+                             primaryHeader: {
+                             text: "graph"
+                             },
+                             chartLegend: {
+                             align: 'right',
+                             verticalAlign: 'top',
+                             renderDirection: 'vertical'
+                             },
+                             seriesSettings: {
+                             line: {
+                             enablePointSelection: true,
+                             pointMark: {
+                             activeSettings: {
+                             pointSelectedState: {
+                             drawWidth: 4,
+                             drawRadius: 4
+                             }
+                             }
+                             }
+                             }
+                             },
+                             axisY: {
+                             
+                             },
+                             dataSeries: [{
+                             seriesType: 'line',
+                             collectionAlias: "New visitors",
+                             data: householdPrices
+                             }, {
+                             seriesType: 'line',
+                             collectionAlias: "old visitors",
+                             data: industryPrices
+                             }]
+                             });
+                             });
+                            </script>
+                            </div>
+                    </div>
+                </div>
+                    
+                <div class="col">
+                    <div class="icon-box" style="margin-left: 40px;">
+                        <figure>
+                            <div class="figure-content" >
+                              <svg width="70%" height="70%" viewBox="0 0 42 42" class="donut" aria-labelledby="beers-title beers-desc" role="img">
+                                <title id="beers-title">Beers in My Cellar</title>
+                                <desc id="beers-desc">Donut chart showing 10 total beers. Two beers are Imperial India Pale Ales, four beers are Belgian Quadrupels, and three are Russian Imperial Stouts. The last remaining beer is unlabeled.</desc>
+                                <circle class="donut-hole" cx="21" cy="21" r="15.91549430918954" fill="#fff" role="presentation"></circle>
+                                <circle class="donut-ring" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#d2d3d4" stroke-width="3" role="presentation"></circle>
+                                <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#ce4b99" stroke-width="3" stroke-dasharray="40 60" stroke-dashoffset="25" aria-labelledby="donut-segment-1-title donut-segment-1-desc">
+                                  <title id="donut-segment-1-title">Research 62%</title>
+                                </circle>
+                                <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#b1c94e" stroke-width="3" stroke-dasharray="20 80" stroke-dashoffset="85">
+                                  <title id="donut-segment-2-title">Information 17%</title>
+                                </circle>
+                                <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#377bbc" stroke-width="3" stroke-dasharray="30 70" stroke-dashoffset="65">
+                                  <title id="donut-segment-3-title">Product Design 13%</title>
+                                </circle>
+                                <circle class="donut-segment" cx="21" cy="21" r="15.91549430918954" fill="transparent" stroke="#46f1f3" stroke-width="3" stroke-dasharray="20 80" stroke-dashoffset="45">
+                                    <title id="donut-segment-4-title">Packadging 8 %</title>
+                                  </circle>
+                                <!-- unused 10% -->
+                                <g class="chart-text">
+                                  <text x="50%" y="50%" class="chart-number">
+                                    MC
+                                  </text>
+                                  
+                                </g>
+                              </svg>
+                            </div>
+                            
+                          </figure>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    
+    <script>
+        $(document).ready(function(){
+            $('h6.qqqqqqqqq').click(function(){
+                alert('ти клікнув на це')
+            });
+            
+           
+        });
+    </script>
+    
+</body>
+
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script></body>
+</html>
